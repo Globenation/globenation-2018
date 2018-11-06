@@ -1,0 +1,21 @@
+.icon-pagebuilder-td_block_77 {
+	background-image: url('../images/pagebuilder/block77.png') !important;
+    position: relative;
+    width: 60px !important;
+    height: 44px !important;
+    margin-bottom: 0 !important;
+    top: 12px !important;
+}
+.wpb_element_title .icon-pagebuilder-td_block_77 {
+    top: -5px !important;
+}
+.vc_modal-content #td_block_77, .vc_ui-panel-content-container #td_block_77 {
+    padding-left: 75px;
+}
+.td_block_77 .wpb_element_wrapper div {
+    display: none;
+}
+.td_block_77 .wpb_element_wrapper .custom_title {
+    display: block;
+    font-size: 11px;
+}

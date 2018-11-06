@@ -1,0 +1,10 @@
+Welcome to the TagDiv Mobile Theme plugin!
+
+TagDiv Mobile Theme plugin extends our themes to offer you a better experience on mobile devices. We are in a continue research
+in our work, doing our best for fitting your needs, and because the mobile environment is growing up quickly,
+and also your expectations, we come to you with a mobile theme that has been tested to load fast using only the necessary components.
+
+The mobile templates files are in the ./mobile theme directory, the TagDiv Mobile Theme plugin detecting and working with them.
+From the Mobile Theme section of our well known theme panel, all important mobile theme settings can be set.
+
+Without activating the TagDiv Mobile Theme plugin, the responsive version of our theme is used on mobile devices.
