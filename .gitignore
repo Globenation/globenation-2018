@@ -3,7 +3,6 @@
 local-config.php
 debug.log
 
-public/wp/
 public/content/uploads
 public/content/upgrade
 /vendor/
