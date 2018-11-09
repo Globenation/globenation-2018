@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0e3bb12ed7fffa68ffc21768da685a88",
+    "content-hash": "d0ea9e65731b3e247bc71e3e6485e845",
     "packages": [
         {
             "name": "fancyguy/webroot-installer",
@@ -100,10 +100,10 @@
         },
         {
             "name": "wordpress",
-            "version": "4.8.1",
+            "version": "4.9.8",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/WordPress/WordPress/archive/4.8.1.zip",
+                "url": "https://github.com/WordPress/WordPress/archive/4.9.8.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -120,12 +120,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/heroku/heroku-buildpack-php.git",
-                "reference": "5605a37df6eeed5c7f8417086602f496c22bec6d"
+                "reference": "a380d44126a056cc5b7daaa0714714e3c888689f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/heroku/heroku-buildpack-php/zipball/5605a37df6eeed5c7f8417086602f496c22bec6d",
-                "reference": "5605a37df6eeed5c7f8417086602f496c22bec6d",
+                "url": "https://api.github.com/repos/heroku/heroku-buildpack-php/zipball/a380d44126a056cc5b7daaa0714714e3c888689f",
+                "reference": "a380d44126a056cc5b7daaa0714714e3c888689f",
                 "shasum": ""
             },
             "bin": [
@@ -156,7 +156,7 @@
                 "nginx",
                 "php"
             ],
-            "time": "2018-10-16T16:33:47+00:00"
+            "time": "2018-11-08T19:23:29+00:00"
         }
     ],
     "aliases": [],
