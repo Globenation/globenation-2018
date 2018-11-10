@@ -2,19 +2,24 @@
 
 
 
+A Wordpress install running on Heroku with the following add-ons:
+
+* Bucketeer (S3 paid)
+* ClearDB MySQL :: Database (MySQL paid)
+* MemCachier (Memcache free)
+* New Relic APM :: Newrelic (Monitoring free)
+* Papertrail (Logging free)
+* SendGrid (SMTP free)
+
+
+
 **Production** https://www.globenation.ca
 
 **Staging** https://globenation-stg.herokuapp.com
 
 
 
-`git push stage master`
-
-`git push origin master`
-
-
-
-### Remotes
+## Remotes
 
 origin	git@github.com:Globenation/globenation.git (fetch)
 origin	git@github.com:Globenation/globenation.git (push)
@@ -25,19 +30,33 @@ stage	https://git.heroku.com/globenation-stg.git (push)
 
 
 
-### Updating plugins and theme files
+## Credentials
 
-WordPress plugins are inconsistent. Test plugins in stage before deploying to production.
+See the Config Vars for individual service credentials which are exposed as environment variables. 
+
+Do not change existing var names, if a plugin expects a different var name duplicate the original and name the copy accordingly.
+
+
+
+## Database
+
+ClearDB is the MySQL provider with separate add-on instances for stage and production. See Config Vars for credentials stored in CLEARDB_DATABASE_URL.
+
+The production database is synced to stage. It can be resynced by exporting a snapshot of the production database, **changing the url references from www.globenation.ca to globenation-stg.heroku.com**, and importing to stage. 
+
+
+
+## Updating plugins and theme files
 
 Add files to `public/content/plugins` and  `public/content/themes` 
 
-Push to the staging server with `git push stage master` and activate throgh WordPress admin.
+Commit and push to the staging server with `git push stage master` and activate throgh WordPress admin. Push to production with `git push origin master`
 
 
 
-### Updating WordPress core files
+## Updating WordPress core files
 
-Update the Wordpress version number in the composer.json file
+Do not upgrade WordPress from the admin-interface as it will not survive a restart or dyno change. Update multiple instances of the Wordpress version number in the `composer.json` file.
 
 * run `composer update`
 * add all changes using `git add composer.json composer.lock`
