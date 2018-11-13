@@ -1,0 +1,45 @@
+{
+    "name": "webgilde/advanced-ads",
+    "description": "Advanced Ads: Manage and optimize your ads in WordPress",
+    "keywords": ["wordpress", "ads", "plugin"],
+    "authors": [
+        {
+            "name": "Thomas Maier",
+            "email": "thomas.maier@webgilde.com"
+        }
+    ],
+    "homepage": "https://wordpress.org/plugins/advanced-ads/",
+    "license": "GPL-2.0+",
+    "type": "wordpress-plugin",
+    "support": {
+        "forum": "https://wordpress.org/support/plugin/advanced-ads"
+    },
+    "require": {
+        "composer/installers": "~1.0",
+        "xrstf/composer-php52": "^1.0.17",
+        "yoast/i18n-module": "^3.0"
+    },
+    "autoload": {
+        "classmap": [
+            "admin/",
+            "classes/",
+            "public/"
+        ]
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "xrstf\\Composer52\\Generator::onPostInstallCmd"
+        ],
+        "post-update-cmd": [
+            "xrstf\\Composer52\\Generator::onPostInstallCmd"
+        ],
+        "post-autoload-dump": [
+            "xrstf\\Composer52\\Generator::onPostInstallCmd"
+        ]
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.x-dev"
+        }
+    }
+}

@@ -1,0 +1,2 @@
+<input type="text" name="<?php echo ADVADS_SLUG ?>[ga-UID]" value="<?php echo esc_attr( $UID ); ?>" />
+<p class="description"><?php _e( 'Want to know how many of your visitors are using an ad blocker? Enter your Google Analytics property ID above to count them.', 'advanced-ads' ); ?>&nbsp;<code>(UA-123456-1)</code></p>
